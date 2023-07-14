@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.animacion1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example; /*NOMBRE DEL KAYFRAME*/
+  animation-duration: 2s;
+  animation-iteration-count: infinite; /* la animacion se repite infinitas veces*/
+}
+
+@keyframes example {
+  0% {
+    /*estado inicla de la animacion*/
+    background-color: red;
+    left: 0px;
+  }
+  50% {
+    background-color: yellow; /*estado transición en 50%*/
+    left: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px; /*estado final de la transición*/
+  }
+}
+.animacion2 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example2 {
+  /*aqui hay mas estados para las transiciones*/
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: blue;
+    left: 0px;
+    top: 200px;
+  }
+  50% {
+    background-color: green;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+h1 {
+  width: 20%;
+  background-color: aqua;
+  font-weight: bold;
+}
+h1 {
+  animation-duration: 5s;
+  animation-name: texto;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes texto {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg);
+  }
+}

@@ -1,0 +1,25 @@
+.lista {
+  background-color: rgb(223, 190, 181);
+  display: flex;
+  padding: 30px;
+  list-style-type: none;
+  justify-content: center;  
+}
+
+.lista .xli {
+  margin: 20px;
+  
+}
+
+.lista li a {
+  font-size: 27px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(243, 143, 235);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+}

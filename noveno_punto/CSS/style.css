@@ -1,0 +1,19 @@
+table{
+    width: 70%;
+    background-color: yellow;
+}
+
+table, td{
+    border: dotted black 1px;
+    font-size: 20px;
+}
+
+table th{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+table, .borde-inferior{
+    border-bottom: dotted red 1px;
+}
